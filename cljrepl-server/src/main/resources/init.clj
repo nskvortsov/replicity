@@ -1,7 +1,7 @@
 (in-ns 'user)
 (require '(tc))
 
-(def nrepl (start-server))
+(defonce nrepl (start-server :port 7888))
 (println (str "nrepl started at port " (:port nrepl)))
 
 (.addListener
