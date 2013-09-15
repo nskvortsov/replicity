@@ -35,6 +35,7 @@ public class ReplEmbedder {
     RT.var("tc", "users", users);
     RT.var("tc", "page-places", places);
     RT.var("tc", "controller-manager", webControllerManager);
+    RT.loadResourceScript("tc.clj");
 
     RT.loadResourceScript("init.clj");
   }
